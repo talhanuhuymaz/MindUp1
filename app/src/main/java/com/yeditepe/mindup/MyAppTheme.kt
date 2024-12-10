@@ -13,14 +13,13 @@ private val LightColorScheme = lightColorScheme(
     background = Color(0xFFF6F6F6),
     surface = Color.White,
     onSurface = Color.Black,
-    tertiary = Color(0xFFE0E0E0) // Example: light gray
+    tertiary = Color(0xFFE0E0E0)
 )
 
 @Composable
 fun MyAppTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = LightColorScheme,
-        typography = androidx.compose.material3.Typography(),
         content = content
     )
 }
