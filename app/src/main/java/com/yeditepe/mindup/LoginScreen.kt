@@ -63,7 +63,8 @@ fun LoginScreen(navController: NavHostController) {
         Button(
             onClick = {
                 if (email.isNotEmpty() && password.isNotEmpty()) {
-                    navController.navigate("main")
+                    navController.navigate("main"){
+                        popUpTo("login") { inclusive = true }} // Remove login from the back stack
                 } else {
                     errorMessage = "Please fill in all fields"
                 }
